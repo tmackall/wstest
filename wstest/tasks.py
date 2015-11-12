@@ -33,6 +33,7 @@ def add(a, b):
     function: add - adds 2 numbers
     '''
     try:
+        LOGGER.info('adding %s + %s' % (a, b))
         sum = int(a) + int(b)
     except:
         LOGGER.error('Exception when adding %s and %s' % (a, b))
